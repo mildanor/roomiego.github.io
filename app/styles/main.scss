@@ -319,7 +319,9 @@ body {
 
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: flex-start;
+
+          flex-grow: 1;
 
           li {
             padding:1em;
