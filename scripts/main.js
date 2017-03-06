@@ -1,1 +1,1 @@
-"use strict";console.log("'Allo 'Allo!");
+"use strict";$(document).ready(function(){$("#free_pm, #freemium_pm").on("click",function(){$(this).next(".feedback-click").show().delay(2e3).fadeOut(500)})});
