@@ -110,14 +110,15 @@
               <li>Unlimited matches</li>
               <li>See reviews from previous flatmates</li>
             </ul>
-            <input class="btn btn-default" type="submit" id='freemium_pm' value="Pick this!" onclick="ga('send', 'event', 'Premium', 'Premium', 'Premium');">
+            <input class="btn btn-default" type="submit" id='premium_pm' value="Pick this!" onclick="ga('send', 'event', 'Premium', 'Premium', 'Premium');">
             <div class="feedback-click"><i class="fa fa-thumbs-o-up"></i> Gotcha!</div>
           </section>
         </div>
       </section>
       <section id="newsletter">
         <h2>Seems good?</h2>
-        <p>Sign up to our newsletter? We hate spam as well, don't worry. We'll only send you an email when our service will be officially launched.</p>
+        <p>We are launching soon!</p>
+        <p>Signup for the newsletter, we will send you an email when the service is launched!</p>
 
         <!-- Begin MailChimp Signup Form -->
         <div id="mc_embed_signup">
@@ -195,5 +196,13 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      $("#free_pm, #premium_pm").click(function() {
+        $('html,body').animate({
+          scrollTop: $("#newsletter").offset().top
+        }, 'slow');
+      });
+    </script>
   </body>
 </html>
