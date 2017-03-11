@@ -68,7 +68,6 @@ gulp.task('html', ['styles', 'scripts'], () => {
 
 gulp.task('images', function () {
     return gulp.src('app/images/**/*')
-        .pipe($.livereload(server))
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
             progressive: true,
